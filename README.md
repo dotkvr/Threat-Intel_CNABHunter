@@ -7,8 +7,8 @@
 **Data da análise:** 26 de Maio de 2026
 **Família:** CNABHunter / Nuikita
 **Origem:** Brasil
-**Severidade:** **CRÍTICA
-Confidencialidade:** Threat Intelligence Pública
+**Severidade:** **CRÍTICA**
+
 
 
 
