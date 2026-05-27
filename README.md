@@ -2,7 +2,7 @@
 
 ## Análise Forense de Malware Brasileiro Direcionado ao Padrão Bancário CNAB240/400
 
-\---
+
 
 **Data da análise:** 26 de Maio de 2026
 **Família:** CNABHunter / Nuikita
@@ -10,7 +10,7 @@
 **Severidade:** **CRÍTICA
 Confidencialidade:** Threat Intelligence Pública
 
-\---
+
 
 ## RESUMO EXECUTIVO
 
@@ -29,7 +29,7 @@ Diferente dos banking trojans tradicionais que miram credenciais via overlays ba
 
 
 
-\---
+
 
 ## 1\. CADEIA DE CUSTÓDIA
 
@@ -64,7 +64,7 @@ SHA-256: 6a5db602b9f4e59a3393c4d0af9c4f80104e8c3d71ebc7c52faf1771456712b4
 Função:  Módulo principal de espionagem (Python compilado via Nuitka)
 ```
 
-\---
+
 
 ## 2\. METODOLOGIA APLICADA
 
@@ -110,7 +110,7 @@ A análise seguiu framework forense estruturado em **6 etapas**, todas conduzida
 * Mapeamento de APIs Windows utilizadas
 * Análise de exports e imports da DLL maliciosa
 
-\---
+
 
 ## 3\. ACHADOS CRÍTICOS
 
@@ -204,7 +204,7 @@ O conjunto de APIs importadas confirma capacidades de **dropper + RAT modular**:
 |Módulo `\_wmi.pyd` (Python)|Reconhecimento via WMI|T1047|
 |Módulo `\_socket.pyd` (Python)|Comunicação de rede|T1071|
 
-\---
+
 
 ## 4\. POR QUE O CNAB240/400 É UM ALVO ESTRATÉGICO
 
@@ -250,7 +250,7 @@ Um único arquivo CNAB pode conter **centenas de pagamentos** somando **dezenas 
 * **Detecção tardia** (somente na conciliação bancária subsequente)
 * **Recuperação muito difícil** (transferências bancárias B2B raramente são revertidas)
 
-\---
+
 
 ## 5\. INDICADORES DE COMPROMISSO (IOCs)
 
@@ -294,7 +294,7 @@ python313.dll                     ← Indicador de Python embutido em TEMP
 * Acesso/modificação de arquivos com extensões `.REM`, `.RET`, `.CNB` (formatos CNAB)
 * Queries WMI a partir de processo Python em diretório temporário
 
-\---
+
 
 ## 6\. CONTEXTUALIZAÇÃO NO CENÁRIO BRASILEIRO
 
@@ -311,7 +311,7 @@ O CNABHunter se insere em um cenário de **escalada significativa de ameaças fi
 
 **O diferencial do CNABHunter:** enquanto outras famílias miram **pessoa física** com overlays bancários ou phishing, o CNABHunter mira **pessoa jurídica** atacando a infraestrutura de processamento financeiro corporativo. O ROI por vítima é significativamente maior — uma única empresa comprometida pode gerar fraudes na casa dos **R$ milhões**, contra os R$ centenas-milhares típicos de fraude com pessoa física.
 
-\---
+
 
 ## 7\. CONCLUSÃO E POSICIONAMENTO
 
@@ -319,7 +319,7 @@ O CNABHunter representa uma evolução preocupante do cybercrime brasileiro: **m
 
 A análise aqui apresentada visa contribuir com a comunidade de threat intel nacional. 
 
-\---
+
 
 ## REFERÊNCIAS
 
@@ -329,7 +329,7 @@ A análise aqui apresentada visa contribuir com a comunidade de threat intel nac
 * FEBRABAN — Documentação CNAB240/CNAB400
 * Elastic Security Labs — TCLBANKER (família correlata)
 
-\---
+
 
 ## SOBRE ESTA ANÁLISE
 
